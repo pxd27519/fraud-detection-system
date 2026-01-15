@@ -1,0 +1,38 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.fraud</groupId>
+        <artifactId>fraud-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>common-dto</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+            <!-- Spring Boot AMQP (RabbitMQ) -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+            </dependency>
+
+            <!-- Web (optional, for health check) -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+
+            <!-- Common DTO module -->
+            <dependency>
+                <groupId>com.fraud</groupId>
+                <artifactId>common-dto</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
+    </dependencies>
+</project>
